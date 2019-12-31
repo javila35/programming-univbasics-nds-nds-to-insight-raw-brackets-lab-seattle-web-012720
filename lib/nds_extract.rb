@@ -2,11 +2,12 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 d_data = directors_database
 
+movie_index= 0 
 row_index = 0 
 while row_index < d_data.length do 
-  column_index = 0
+  total = 0 
   while column_index < d_data[row_index][:name][column_index].length do
-    puts 
+    
     column_index += 1 
   end 
   row_index += 1
