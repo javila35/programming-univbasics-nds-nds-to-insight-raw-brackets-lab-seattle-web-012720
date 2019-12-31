@@ -3,14 +3,13 @@ require 'directors_database'
 d_data = directors_database
 
 movie_index= 0 
-row_index = 0 
-while row_index < d_data.length do 
+director_index = 0 
+while director_index < d_data.length do 
   total = 0 
-  while column_index < d_data[row_index][:name][column_index].length do
-    
-    column_index += 1 
+  while movie_index < d_data[director_index][:name][:movies].length do
+    total += d_data[director_index][:name][:worldwide_gross]
   end 
-  row_index += 1
+  director_index += 1
 end 
   
 
