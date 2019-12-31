@@ -4,6 +4,13 @@ d_data = directors_database
 
 row_index = 0 
 while row_index < d_data.length do 
+  column_index = 0
+  while column_index < d_data[row_index][:name] do
+    
+    column_index += 1 
+  end 
+  row_index += 1
+end 
   
 
 def directors_totals(nds)
