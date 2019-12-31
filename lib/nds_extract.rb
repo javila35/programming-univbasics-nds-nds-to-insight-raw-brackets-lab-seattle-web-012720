@@ -8,7 +8,7 @@ director_index = 0
 while director_index < d_data.length do 
   total = 0 
   while movie_index < d_data[director_index][:movies].length do
-    total += d_data[director_index][:movies][:worldwide_gross]
+    total += d_data[director_index][:movies][movie_index][:worldwide_gross]
     hash[d_data[director_index][:name]] = total 
     movie_index += 1 
   end 
