@@ -15,7 +15,7 @@ while director_index < nds.length do
   movie_index = 0 
   director_index += 1
 end 
-puts hash
+p hash
 end
 
 
