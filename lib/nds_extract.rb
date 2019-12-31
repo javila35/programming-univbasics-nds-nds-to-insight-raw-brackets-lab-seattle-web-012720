@@ -1,5 +1,10 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+d_data = directors_database
+
+row_index = 0 
+while row_index < d_data.length do 
+  
 
 def directors_totals(nds)
   # Remember, it's always OK to pretty print what you get *in* to make sure
@@ -20,3 +25,5 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   nil
 end
+
+
